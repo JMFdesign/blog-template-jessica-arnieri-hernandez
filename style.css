@@ -1,0 +1,228 @@
+/*
+Theme Name: Jessica Arnieri Hernandez Blog Theme
+Theme URI:
+Author: Jessica Arnieri Hernandez
+Description: Blog theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: jessica_arnieri_hernandez_blank_template
+*/
+
+@import url('stylesheets/normalize.css');
+@import url('stylesheets/skeleton.css');
+
+@font-face {
+    font-family: 'source';
+    src: url('../fonts/source.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'source_b';
+    src: url('../fonts/source_b.otf') format('opentype');
+}
+
+*{
+	color: #000000;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+body {
+  background-image: url('images/bgd2.jpg');
+  width: 100vw;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-weight: normal;
+  font-family:'source', sans-serif;
+}
+
+h1 {
+  font-size: 3.0rem;
+  text-align: left;
+  margin-top: 40px;
+  color: #437930;
+  border-bottom: thick solid #88aa7c;
+}
+
+h2 {
+  font-size: 2.0rem;
+  text-align: left;
+  color: #a64e9c;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 3.0rem;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: #437930;
+  border-bottom: thick solid #88aa7c;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #2f7737;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* --- Index --- */
+
+main {
+  margin: 20px auto;
+  padding: 0 20px 20px 20px;
+}
+
+section {
+  margin-top: 40px;
+  border-bottom: thick solid hsla(104, 21%, 58%, 0.61);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section h3 a {
+  font-size: 2.0rem;
+  color: #a64e9c;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.add_bottom_padding {
+  margin-bottom: 40px;
+}
+
+/* --- Sidebar --- */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#logo {
+  background-image: url('images/logo.jpg');
+  width: 100%;
+  height: auto;
+}
+
+.side_bar {
+  padding: 0 20px;
+}
+
+.side_bar h3 {
+  text-align: center;
+  align: center;
+  font-size: 2.0rem;
+  color: #a64e9c;
+  padding: 20px 0 0 0;
+}
+
+.side_bar h2 a,{
+  font-size: 2.0rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#spring a {
+  font-size: 2.0rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#spring {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 20px 0;
+}
+
+#wp-calendar {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Single and Page --- */
+
+nav {
+  margin: -20px -20px 0 -20px;
+  padding: 20px 0;
+  background-color: hsla(307, 36%, 48%, 0.56);
+  -webkit-box-shadow: 0 10px 5px 0 hsla(0, 0%, 50%, 0.37);
+  box-shadow: 0 10px 5px 0 hsla(0, 0%, 50%, 0.37);
+}
+
+nav ul {
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+nav ul li,
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform:uppercase;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav ul li:last-of-type,
+nav ul li a:last-of-type {
+  padding-right: 20px;
+}
+
+@media (min-width: 550px) {
+  nav ul li:first-of-type,
+  nav ul li a:first-of-type {
+    margin-left: 40px;
+  }
+}
+
+#single_and_page main {
+  margin-top: 20px auto;
+  padding: 0 20px 20px 20px;
+}
+
+/* --- Search --- */
+
+span {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #88aa7c;
+}
+
+/* --- Footer --- */
+
+footer h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 20px -20px 0 -20px;
+  padding: 20px 0;
+  background-color: #88aa7c;
+}
